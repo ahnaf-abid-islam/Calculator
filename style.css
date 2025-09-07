@@ -18,5 +18,8 @@ body{
 
 .number, .opearator{
     cursor: pointer;
-    border-radius: 10px;
+}
+
+#keyboard{
+    
 }
