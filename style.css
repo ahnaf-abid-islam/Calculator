@@ -1,3 +1,4 @@
+
 body{
     border: 10px solid black;
     height: 98vh;
@@ -20,6 +21,11 @@ body{
     cursor: pointer;
 }
 
-#keyboard{
-    
+#keyboard div{
+    height: 12vh;
+}
+
+#result{
+    height: 100px;
+    background-color: #186ba1;
 }
