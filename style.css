@@ -23,6 +23,8 @@ body{
 
 #keyboard div{
     height: 12vh;
+    position: relative;
+    top: 70px;
 }
 
 #result{
@@ -37,6 +39,10 @@ body{
 
 #output_value{
     background-color: red;
+}
+
+#output, #history{
+    height: 10vh;
 }
 
 #history_value{

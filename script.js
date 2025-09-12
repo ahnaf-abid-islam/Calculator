@@ -32,7 +32,7 @@ function getFormattedNumber(num){
 }
 
 function reverseNumberFormat(num){
-    return Number(num.replace(/./g,''));
+    return Number(num.replace(/,/g,''));
 }
 
 var operator = document.getElementsByClassName("operator");
@@ -96,7 +96,7 @@ number[i].addEventListener('click',function(){
 
 var output=reverseNumberFormat(getOutput());
 
-if(output!=NaN){ //if output is a number
+if(!isNaN(output)){
 
 output=output+this.id;
 
