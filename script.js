@@ -44,7 +44,7 @@ for(var i =0;i<operator.length;i++){
         }
         else if(this.id=="backspace"){
             var output=reverseNumberFormat(getOutput()).toString();
-            if(output){
+            if(output && output!=="NaN"){
                 output= output.substr(0,output.length-1);
                 printOutput(output);
             }
@@ -98,7 +98,7 @@ var output=reverseNumberFormat(getOutput());
 
 if(!isNaN(output)){
 
-output=output+this.id;
+output=output.toString() +this.id;
 
 printOutput(output);
 
