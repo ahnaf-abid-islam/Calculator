@@ -20,15 +20,11 @@ function printOutput(num){
     }
 }
 
-function getFormattedNumber(num){
-    if (num == "-"){
-        return "";
-    }
-
-    var n = Number(num);
-    var value = n.toLocaleString("en");
-    return value;
-
+function getFormattedNumber(num) {
+    if (num === "-") return "";
+    let n = Number(num);
+    if (isNaN(n)) return "";
+    return n.toLocaleString("en");
 }
 
 function reverseNumberFormat(num){
